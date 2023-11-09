@@ -305,7 +305,7 @@ namespace demo_0.Controllers
             {
                 Id = movieResult.Id,
                 Name = movieResult.Name,
-                Description = movieResult.Description,
+                Description = movieResult.Description is null ? "sin descripcion" : movieResult.Description ,
                 Gender = new Gender { Name = movieResult.Gender },
                 GenderId = movieResult.GenderId,
                 ImageUrl = movieResult.ImageUrl,
