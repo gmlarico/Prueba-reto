@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - demo_0</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    </environment>
+    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Scripts/Core/codebase.js" />
+    <link rel="stylesheet" href="~/Bundling/content_css.css" />
+    <link rel="stylesheet" href="~/Bundling/plugins_css.css" />
+    <link rel="stylesheet" href="~/Bundling/specials_css.css" />
+
+    <script src="~/Bundling/core_js.js"></script>
+    <script src="~/Bundling/plugins_js.js"></script>
+    <script src="~/Bundling/components_js.js"></script>
+    @* <link rel="stylesheet" href="~/demo_0.styles.css" asp-append-version="true" /> *@
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    @*<header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">demo_0</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Movies" asp-action="Index">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="MoviesSchedule" asp-action="Index">Programar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>*@
+    <div id="page-container" class="sidebar-inverse side-scroll page-header-fixed page-header-inverse main-content-boxed">
+    <header id="page-header">
+   
+        <div class="content-header">
+        
+            <div class="content-header-section">
+            
+                <div class="content-header-item">
+                    <a class="link-effect font-w700 mr-5" href="#">
+                        <i class="si si-fire text-primary"></i>
+                        <span class="font-size-xl text-dual-primary-dark">Cine</span><span class="font-size-xl text-primary">maX</span>
+                    </a>
+                </div>
+               
+            </div>
+        
+            <div class="content-header-section d-none d-lg-block">
+                
+                <ul class="nav-main-header">
+                    <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="si si-compass"></i>Inicio</a>
+                    </li>                    
+                    <li>
+                            <a asp-area="" asp-controller="Movies" asp-action="Index"><i class="si si-magnifier"></i>Peliculas</a>
+                    </li>
+                    <li>
+                            <a asp-area="" asp-controller="Promociones" asp-action="Promociones"><i class="si si-action-undo"></i>Crear Cupones</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Login" asp-action="Index"><i class="si si-action-undo"></i>Log in</a>
+                    </li>
+                </ul>
+           
+            </div>
+           
+            <div class="content-header-section">
+                
+            </div>           
+        </div> 
+    </header>
+        <main id="main-container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </main>
+
+    </div>
+   @* <main role="main" class="pb-3">
+    @RenderBody()
+    </main>*@
+    
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - demo_0 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/Content/assets/js/codebase.core.min.js"></script>
+    <script src="~/Content/assets/js/codebase.app.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>
+

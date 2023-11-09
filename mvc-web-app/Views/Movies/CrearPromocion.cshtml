@@ -1,0 +1,73 @@
+﻿@model MoviesViewModel
+@{
+}
+
+<a>CREAR CUPONES</a>
+
+<div class="col-md-7">
+    <form aasp-action="Edit" , asp-controller="Movies" method="post" enctype="multipart/form-data">
+        <div class="block block-rounded block-themed">
+            <div class="block-header bg-gd-primary">
+                <h3 class="block-title">Adquiere tu entrada</h3>
+                <div class="block-options">
+                </div>
+            </div>
+            <div class="block-content block-content-full">               
+                <div class="form-group row">
+                    <label class="col-12" for="ecom-product-name">Codigo de cupon</label>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="IdCodigoCupon" name="ecom-product-name" placeholder="Codigo del cupon ...">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12" for="ecom-product-name">Descripcion</label>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="IdDescripcion" name="ecom-product-name" placeholder="Descripcion de cupon ...">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-12" for="example-select2">Género</label>
+                    <div class="col-12">
+
+                        <select class="js-select2 form-control" id="IdSelectGenero" name="example-select2" style="width: 100%;" data-placeholder="Genero" asp-items="Model.GenderList">
+                            <option value="">Seleccione un género</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12">Fecha Inicio</label>
+                    <div class="col-12">
+                        <input type="date" class="form-control" id="idFechaIni" name="ecom-product-name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12">Fecha fin</label>
+                    <div class="col-12">
+                        <input type="date" class="form-control" id="idFechaFin" name="ecom-product-name">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-alt-success" data-dismiss="modal" id="btnComprar">
+                    <i class="fa fa-check"></i> Crear Cupon
+                </button>
+
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+<script src="~/Scripts/View/Movies/CrearCupon.js"></script>
+
+<script>
+    // Obtén la referencia a los campos de fecha
+    var fechaInicio = document.getElementById("idFechaIni");
+    var fechaFin = document.getElementById("idFechaFin");
+
+    // Agrega un controlador de eventos para el cambio en el campo de fecha de inicio
+    fechaInicio.addEventListener("change", function () {
+        // Configura la fecha mínima en el campo de fecha de fin
+        fechaFin.min = fechaInicio.value;
+    });
+</script>

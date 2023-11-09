@@ -1,0 +1,9 @@
+﻿body {
+}
+.zoomPics {
+    transition: transform .2s; 
+}
+ 
+.zoomPics:hover {
+    transform: scale(1.5); 
+}

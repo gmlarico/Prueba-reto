@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Taller.MovieCinema.API.props" />
+</Project>

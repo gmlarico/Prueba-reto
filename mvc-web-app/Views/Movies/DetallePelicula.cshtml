@@ -1,0 +1,66 @@
+﻿@model MoviesViewModel
+@{
+    ViewData["Title"] = "Detalle pelicula";
+}
+<a></a>
+
+<div class="row gutters-tiny" style="padding-top: 1%;">
+    <div class="col-md-7">
+        <form aasp-action="Edit" , asp-controller="Movies" method="post" enctype="multipart/form-data">
+            <div class="block block-rounded block-themed">
+                <div class="block-header bg-gd-primary">
+                    <h3 class="block-title" style="font-size: 34px;">TITULO: @Model.DetallePelicula.Name</h3>
+                    <div class="block-options">
+                    </div>
+                </div>
+                <div class="block-content block-content-full">
+                    <div class="form-group row">
+                       
+                        <div class="col-12">
+                            <img style="border-radius: 10%;width: 80%" src="~/img/Incognito.jpeg" title="Imagen de Muestra" />
+                        </div>
+                        
+                    </div>
+                   
+                   
+                   
+                    
+                   
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="col-md-5">
+        <form action="be_pages_ecom_product_edit.html" method="post" onsubmit="return false;">
+            <div class="block block-rounded block-themed">
+                <div class="block-header bg-gd-primary">
+                    <h3 class="block-title">Sinopsis de la pelicula</h3>
+                    <div class="block-options">
+                    </div>
+                </div>
+                <div class="block-content block-content-full">
+                    <div class="form-group row">
+                        <div class="col-12">
+
+                            <h3 class="block-title">GENERO: @Model.DetallePelicula.Gender.Name</h3>
+
+                        </div>
+
+                        <div class="col-12">
+                        
+                            <h3 class="block-title">@Model.DetallePelicula.Description.Trim()</h3>
+
+                        </div>
+                    </div>
+                    <a class="btn btn-info mb-10" style="width: 45%;" asp-action="ComprarEntrada" asp-controller="Movies" asp-route-id=@Model.DetallePelicula.Id method="get" enctype="multipart/form-data">Comprar ticket</a>
+
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="~/Scripts/View/Movies/Entradas.js"></script>

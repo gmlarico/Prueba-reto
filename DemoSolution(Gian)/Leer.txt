@@ -1,0 +1,4 @@
+Infraestructura tendra acceso a datos
+Persistencia - en especifico es la coneccion a base de datos y guardado a archivos planos en disco
+Se divide en 2
+CORE - Capa cross independiente para evitar las dependencias ciclicas

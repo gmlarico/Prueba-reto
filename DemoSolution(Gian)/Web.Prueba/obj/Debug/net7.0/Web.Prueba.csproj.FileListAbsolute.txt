@@ -1,0 +1,12 @@
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\bin\Debug\net7.0\Web.Prueba.deps.json
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\bin\Debug\net7.0\Web.Prueba.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\bin\Debug\net7.0\Web.Prueba.pdb
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.csproj.AssemblyReference.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.AssemblyInfoInputs.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.AssemblyInfo.cs
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.csproj.CoreCompileInputs.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\refint\Web.Prueba.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\Web.Prueba.pdb
+D:\Proyectos .NET\DemoSolution(Gian)\Web.Prueba\obj\Debug\net7.0\ref\Web.Prueba.dll

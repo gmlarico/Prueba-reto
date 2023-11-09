@@ -1,0 +1,25 @@
+﻿.no-close-progress {
+    border: none !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.no-close-progress .ui-dialog-titlebar-close {
+    display: none;
+}
+
+.progressBar-resinplast {
+    margin-top: 15px;
+}
+
+.progressBar-resinplast-label {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    margin-left: -48px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}

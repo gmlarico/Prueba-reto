@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentacion", "1.Presentacion", "{9FDD2D5D-4EE9-43CE-B498-56F225D65FEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Infraestructura", "2.Infraestructura", "{B5E8C04A-F07B-402F-A532-D1696503329B}"
+	ProjectSection(SolutionItems) = preProject
+		Leer.txt = Leer.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Aplicacion", "3.Aplicacion", "{A7868F0D-E00B-4831-B992-35F151F1A952}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Domain", "4.Domain", "{70F7B644-2175-48BF-A412-0BFBE6AD6D28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Aplication", "Taller.MovieCinema.Aplication\Taller.MovieCinema.Aplication.csproj", "{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Domain", "Taller.MovieCinema.Domain\Taller.MovieCinema.Domain.csproj", "{E1B97F89-7278-4828-A601-2BB77EAB0865}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.API", "Taller.MovieCinema.API\Taller.MovieCinema.API.csproj", "{73A6280E-3BC2-4200-85CA-81705795C6C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Infrastructure.Persistence", "Taller.MovieCinema.Infrastructure.Persistence\Taller.MovieCinema.Infrastructure.Persistence.csproj", "{38DA7660-C8C4-4E1C-B877-6803FBDFE531}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Infrastructure.Core", "Taller.MovieCinema.Infrastructure.Core\Taller.MovieCinema.Infrastructure.Core.csproj", "{662E8F36-E066-44AE-864F-932B72ADAE7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Infrastructure", "Taller.MovieCinema.Infrastructure\Taller.MovieCinema.Infrastructure.csproj", "{AF56625B-BCF1-417C-B183-648DC1025386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taller.MovieCinema.Infrastructure.Rest", "Taller.MovieCinema.Infrastructure.Rest\Taller.MovieCinema.Infrastructure.Rest.csproj", "{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-0", "..\mvc-web-app\demo-0.csproj", "{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B97F89-7278-4828-A601-2BB77EAB0865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B97F89-7278-4828-A601-2BB77EAB0865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B97F89-7278-4828-A601-2BB77EAB0865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B97F89-7278-4828-A601-2BB77EAB0865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A6280E-3BC2-4200-85CA-81705795C6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A6280E-3BC2-4200-85CA-81705795C6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A6280E-3BC2-4200-85CA-81705795C6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A6280E-3BC2-4200-85CA-81705795C6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DA7660-C8C4-4E1C-B877-6803FBDFE531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DA7660-C8C4-4E1C-B877-6803FBDFE531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DA7660-C8C4-4E1C-B877-6803FBDFE531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DA7660-C8C4-4E1C-B877-6803FBDFE531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{662E8F36-E066-44AE-864F-932B72ADAE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{662E8F36-E066-44AE-864F-932B72ADAE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{662E8F36-E066-44AE-864F-932B72ADAE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{662E8F36-E066-44AE-864F-932B72ADAE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF56625B-BCF1-417C-B183-648DC1025386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF56625B-BCF1-417C-B183-648DC1025386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF56625B-BCF1-417C-B183-648DC1025386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF56625B-BCF1-417C-B183-648DC1025386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{118BCFB5-8BB2-45C2-AC65-6BEAE9E9A0A1} = {A7868F0D-E00B-4831-B992-35F151F1A952}
+		{E1B97F89-7278-4828-A601-2BB77EAB0865} = {70F7B644-2175-48BF-A412-0BFBE6AD6D28}
+		{73A6280E-3BC2-4200-85CA-81705795C6C7} = {9FDD2D5D-4EE9-43CE-B498-56F225D65FEE}
+		{38DA7660-C8C4-4E1C-B877-6803FBDFE531} = {B5E8C04A-F07B-402F-A532-D1696503329B}
+		{662E8F36-E066-44AE-864F-932B72ADAE7D} = {B5E8C04A-F07B-402F-A532-D1696503329B}
+		{AF56625B-BCF1-417C-B183-648DC1025386} = {B5E8C04A-F07B-402F-A532-D1696503329B}
+		{D97578F1-92E4-4A1E-80F9-AE12AF4F2F41} = {9FDD2D5D-4EE9-43CE-B498-56F225D65FEE}
+		{6A6B28C8-C021-4CF6-9E73-7F3EDC4BFB13} = {9FDD2D5D-4EE9-43CE-B498-56F225D65FEE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38062416-F213-418A-9867-EADAE6EC971B}
+	EndGlobalSection
+EndGlobal

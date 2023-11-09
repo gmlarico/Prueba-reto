@@ -1,0 +1,5 @@
+- Aplication colocar casos de uso
+- En Transport se colocara todas las clases dto 
+- las interface(contratos) estan con sus clases implementacion Sin la I
+- PATRON CQRS (COMANDS Y QUERYS)
+-Se inyecta repository y Context (Context va la bd Principal y Repository las servicios remotos de terceros  terceros o segundos)(para varia bases de datos)

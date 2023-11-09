@@ -1,0 +1,12 @@
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\bin\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.deps.json
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\bin\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\bin\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.pdb
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.csproj.AssemblyReference.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.AssemblyInfoInputs.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.AssemblyInfo.cs
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.csproj.CoreCompileInputs.cache
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\refint\Taller.Movie.Cinema.Infrastructure.Core.dll
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\Taller.Movie.Cinema.Infrastructure.Core.pdb
+D:\Proyectos .NET\DemoSolution(Gian)\Taller.Movie.Cinema.Infrastructure.Core\obj\Debug\net7.0\ref\Taller.Movie.Cinema.Infrastructure.Core.dll

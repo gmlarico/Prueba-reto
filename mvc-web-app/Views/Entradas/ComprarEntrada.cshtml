@@ -1,0 +1,115 @@
+﻿@model MoviesViewModel
+@{
+    ViewData["Title"] = "Tienda online";
+}
+<a>COMPRA ENTRADAS AQUI</a>
+
+<div class="row gutters-tiny">
+    <div class="col-md-7">
+        <form aasp-action="Edit" , asp-controller="Movies" method="post" enctype="multipart/form-data">
+            <div class="block block-rounded block-themed">
+                <div class="block-header bg-gd-primary">
+                    <h3 class="block-title">Adquiere tu entrada</h3>
+                    <div class="block-options">
+                    
+                    </div>
+                </div>
+                <div class="block-content block-content-full">
+                    <div class="form-group row">
+                        <label class="col-12">Cantidad de entradas</label>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="ecom-product-name" name="ecom-product-name" placeholder="Product Name" asp-for="DetallePelicula.NumTicket">
+                        </div>
+                    </div>
+                    <input id="IdPelicula" type="hidden" asp-for="DetallePelicula.Id" />
+                    <div class="form-group row">
+                        <label class="col-12" for="ecom-product-name">Nombre de pelicula</label>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="IdTituloPelicula" name="ecom-product-name" placeholder="Product Name" asp-for="DetallePelicula.Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12" for="example-select2">Género</label>
+                        <div class="col-12">
+
+                            <select class="js-select2 form-control" id="IdSelectGenero" name="example-select2" style="width: 100%;" data-placeholder="Genero" asp-for="DetallePelicula.GenderId"  asp-items="Model.GenderList">
+                           
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12">Apellido y nombre</label>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="IdNombre" name="ecom-product-name" placeholder="Nombre y Apellido">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12">Email</label>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="IdMail" name="ecom-product-name" placeholder="Ingresar Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12" for="ecom-product-stock">Cupon premiado</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-fw fa-archive"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="IdCupon" name="ecom-product-stock" placeholder="Verificar cupon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12" for="ecom-product-price">Descripcion de Premio</label>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-fw fa-usd"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" id="IdDescripcion" name="ecom-product-price" placeholder="Descripcion" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-alt-success" data-dismiss="modal" id="btnComprar">
+                        <i class="fa fa-check"></i> Comprar
+                    </button>
+               
+                </div>
+            </div>
+
+        
+        </form>
+    </div>
+    <div class="col-md-5">
+        <form action="be_pages_ecom_product_edit.html" method="post" onsubmit="return false;">
+            <div class="block block-rounded block-themed">
+                <div class="block-header bg-gd-primary">
+                    <h3 class="block-title">Imagen de la pelicula</h3>
+                    <div class="block-options">
+                        
+                    </div>
+                </div>
+                <div class="block-content block-content-full">
+                    <div class="form-group row">
+                        
+                        <div class="col-12">
+
+                            <img style="border-radius: 10%;width: 100%" src="~/img/Incognito.jpeg" title="Imagen de Muestra" />
+                           
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+<script src="~/Scripts/View/Movies/Entradas.js"></script>

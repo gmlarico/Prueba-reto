@@ -1,0 +1,69 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Comprar pelicula";
+}
+<div class="block block-themed ">
+    <div class="block-content">
+        <form id="frmIndicadoresPrincipalIndex" method="post" autocomplete="off">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block block-mode">
+                        <div class="block-header block-header-default">
+                            <h3 class="block"><strong>Lista de Productos</strong></h3>
+                            <div class="block-options">
+                                <button id="btnBuscar" type="button" class="btn-block-option" data-bind="visible: Consultar.Visible, enable: Consultar.Enabled" data-toggle="tooltip" data-placement="top" title="Buscar">
+                                    <i class="fa fa-search fa-2x"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="block-content" style="padding-top: 0px">
+                            <div class="row tab-pane">
+                                <div class="col-md-6">
+                                    <div class="form-material form-material-sm floating">
+                                        <input id="txtid" name="txtid" type="text" class="form-control form-control-sm">
+                                        <label for="txtid">Buscar promocion</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-2" style="text-align: right;padding-left: 30%;">
+                                    <label class="css-control css-control css-control-success css-switch">
+                                        <br />
+                                        <a class="btn btn-success min-width-125" style="width: 60%;" asp-action="CrearPromocion" asp-controller="Movies">Ingresar Promocion</a>
+                                        @*<button type="button" class="btn btn-success min-width-125" data-toggle="modal" data-target="#modal-extra-large" data-backdrop="static" data-keyboard="false">Ingresar producto</button>*@
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="block">
+    <div class="block-header block-header-default">
+        <h3 class="block-title">Lista de promociones</h3>
+
+    </div>
+    <div class="block-content">
+        <table class="table table-bordered table-vcenter" id="TablaPromociones">
+            <thead>
+                <tr id="TablaPromocionesCabeza">
+                    <th class="d-none d-sm-table-cell" style="width: 12%;">Codigo cupon</th>
+                    <th class="d-none d-sm-table-cell" style="width: 20%;">Genero de producto</th>
+                    <th class="d-none d-sm-table-cell" style="width: 20%;">Descripcion</th>
+                    <th class="d-none d-sm-table-cell" style="width: 20%;">Desde</th>
+                    <th class="d-none d-sm-table-cell" style="width: 20%;">Hasta</th>
+                    <th class="text-center" style="width: 30%;">Acción</th>
+                </tr>
+            </thead>
+            <tbody id="TablaPromocionesCuerpo"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/Scripts/View/Movies/Promociones.js"></script>

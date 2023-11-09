@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Taller.MovieCinema.Infrastructure.Rest.props" />
+</Project>

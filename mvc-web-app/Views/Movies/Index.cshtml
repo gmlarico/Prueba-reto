@@ -1,0 +1,232 @@
+﻿@model MoviesViewModel
+
+@{
+    ViewData["Title"] = "Listar películas";
+
+    //ViewBag.Title = "Listar películas viewbag";
+    //ViewBag.Title = "Listar películas viewbag";
+
+    //TempData["TemTitle"] = "Listado temp";
+}
+
+@*<h1>
+        @ViewData["Title"]
+    </h1>*@
+
+@*<h1>
+        @ViewBag.Title
+    </h1>
+
+
+    <h1>
+        @TempData["TemTitle"]
+    </h1>*@
+
+@if (TempData["Alerta"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Alerta</strong> @TempData["Alerta"].
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="card">
+    
+    <div class="card-body">
+
+        @*@using (Html.BeginForm("Search", "Movies", FormMethod.Post))
+        {
+        <h2> Mi form con Html helper </h2>
+        }*@
+
+        @*<form  method="post">*@
+        <form asp-action="Index" asp-controller="Movies" method="post">
+            @*<h2>Mi form con Tag helper</h2>*@
+
+            <div class="row gutters-tiny">
+
+                <div class="block block-themed ">
+                    <div class="block-content">
+                        <form id="frmIndicadoresPrincipalIndex" method="post" autocomplete="off">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="block block-mode">
+                                        <div class="block-header block-header-default">
+                                            <h3 class="block"><strong>Lista de Productos</strong></h3>
+                                            <div class="block-options">
+                                                <button id="btnBuscar" type="button" class="btn-block-option" data-bind="visible: Consultar.Visible, enable: Consultar.Enabled" data-toggle="tooltip" data-placement="top" title="Buscar">
+                                                    <i class="fa fa-search fa-2x"></i>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                        <div class="block-content" style="padding-top: 0px">
+                                            <div class="row tab-pane">
+                                                <div class="col-md-4">
+                                                    <div class="form-material form-material-sm floating">
+                                                        <select asp-for="SelectedGenderId" asp-items="Model.GenderList">
+                                                            <option value="">- Todos</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                           
+                                                <div class="col-md-1" style="text-align: right;padding-left: 10%;">
+                                                    <label class="css-control css-control css-control-success css-switch">
+                                                        <br />
+                                                        @*<button type="button" class="btn btn-success min-width-125" data-toggle="modal" data-target="#modal-extra-large" data-backdrop="static" data-keyboard="false">Ingresar producto</button>*@
+                                                        <input class="btn btn-success min-width-125" type="submit" value="Buscar" />
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                @*<div class="col-md-4">
+                    <div class="filters">
+
+                       
+
+                        <select asp-for="SelectedGenderId" asp-items="Model.GenderList">
+                            <option value="">- Todos</option>
+                        </select>
+
+                   
+
+                        <input class="btn btn-primary" type="submit" value="Buscar" />
+                    </div>
+                </div>*@
+                <div class="col-md-12">
+                    <div class="row row-deck items-push">
+
+
+
+                        @if (Model.Movies != null && Model.Movies.Count > 0)
+                        {
+                            @foreach (var movieItem in Model.Movies)
+                            {
+                                <partial name="_MovieItemPartial" model="@movieItem" />
+
+
+                                @* <div class="movie-item">
+                        <span class="title">@movieItem.Name</span>
+                        <span>@movieItem.Gender!.Name</span>
+                        <p>@movieItem.Description</p>
+
+                        <img src="~/uploads/movie.jpg" width="100">
+
+                        <div class="actions">
+                        <a asp-action="Edit" asp-controller="Movies" asp-route-id="@movieItem.Id">Editar</a>
+
+                        <a asp-action="Delete" asp-controller="Movies" asp-route-id="@movieItem.Id">Eliminar</a>
+
+                        </div>
+                        </div> *@
+
+                            }
+
+
+
+
+                        }
+                        else
+                        {
+                            <p>
+                                No se encontró resultados.
+                            </p>
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+
+@section Styles{
+    <style>
+
+        .card-body .filters {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    </style>
+}
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script>
+
+
+        $(function () {
+            $('.btn-modal').click(function () {
+
+                let imageName = $(this).attr('data-movie-name');
+                let imageUrl = $(this).attr('data-movie-image-url');
+              
+                // $('#exampleModal').find('.modal-body').html(`<img id="modal-movie-image" src="/${imageUrl}" width="100" alt="${movieName}">`);
+                // $("#exampleModal").modal('show');
+
+                console.log('imageUrl', imageUrl);
+
+                $.ajax({
+                    type: "GET",
+                    url: "/Movies/ImageViewerPartial",
+                    data: { "url": imageUrl, "name": imageName },
+                    success: function (response) {
+                        $("#exampleModal").find(".modal-body").html(response);
+                        $("#exampleModal").modal('show');
+                    },
+                    failure: function (response) {
+                        alert(response.responseText);
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    }
+                });
+
+
+
+            });
+        });
+
+
+
+    </script>
+}

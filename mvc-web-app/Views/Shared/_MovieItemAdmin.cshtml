@@ -1,0 +1,48 @@
+﻿@model Movie
+@{
+}
+@*<div class="movie-item">
+    <a href="#" class="btn-modal" data-movie-name="@Model.Name" data-movie-image-url="@Model.ImageUrl">
+        <img src="~/@Model.ImageUrl" width="100">
+    </a>
+    <span class="title">@Model.Name</span>
+    <span>@Model.Gender!.Name</span>
+    <p>@Model.Description</p>
+    <div class="actions">
+        <a asp-action="Edit" asp-controller="Movies" asp-route-id="@Model.Id">Editar</a>
+        <a asp-action="Delete" asp-controller="Movies" asp-route-id="@Model.Id">Eliminar</a>
+    </div>
+</div>*@
+
+<div class="col-md-6 col-xl-3 ">
+    <div class="col-12">
+        <a class="block block-link-shadow block-rounded ribbon ribbon-bookmark ribbon-left ribbon-success text-center" style="margin-bottom: 0%;">
+            <div class="ribbon-box">Estreno</div>
+            <div class="block-content block-content-full col-12">
+                <div>
+                    <img style="border-radius: 10%;" src="~/img/Incognito.jpeg" width="200" />
+                </div>
+                <div class="text-warning">
+                    <i class="fa fa-fw fa-star"></i>
+                    <i class="fa fa-fw fa-star"></i>
+                    <i class="fa fa-fw fa-star"></i>
+                    <i class="fa fa-fw fa-star"></i>
+                    <i class="fa fa-fw fa-star"></i>
+                </div>
+                <div class="font-size-sm text-muted">
+                    @Model.Gender!.Name
+                </div>
+            </div>
+            <div class="block-content block-content-full">
+                <div class="font-w600">@Model.Name</div>
+            </div>
+        </a>
+        <div class="block text-center">
+            <a class="btn btn-info mb-10" style="width: 45%;" asp-action="Edit" asp-controller="Movies" asp-route-id="@Model.Id">Editar</a>
+            <a class="btn btn-info mb-10" style="width: 45%;" asp-action="Delete" asp-controller="Movies" asp-route-id="@Model.Id">Eliminar</a>
+
+        </div>
+
+    </div>
+</div>
+

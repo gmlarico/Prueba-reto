@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+	<PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Taller.MovieCinema.Aplication\Taller.MovieCinema.Aplication.csproj" />
+    <ProjectReference Include="..\Taller.MovieCinema.Domain\Taller.MovieCinema.Domain.csproj" />
+    <ProjectReference Include="..\Taller.MovieCinema.Infrastructure.Core\Taller.MovieCinema.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\Taller.MovieCinema.Infrastructure.Persistence\Taller.MovieCinema.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\Taller.MovieCinema.Infrastructure\Taller.MovieCinema.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

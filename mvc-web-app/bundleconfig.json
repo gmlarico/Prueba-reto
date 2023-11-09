@@ -1,0 +1,96 @@
+[
+  {
+    "outputFileName": "wwwroot/Bundling/specials_css.css",
+    "inputFiles": [
+      "wwwroot/Content/Specials/Select2/select2.css",
+      "wwwroot/Content/Specials/Select2/select2Bootstrap.css",
+      "wwwroot/Content/Specials/Dropzone/basic.css",
+      "wwwroot/Content/Specials/Dropzone/dropzone.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/content_css.css",
+    "inputFiles": [
+      "wwwroot/Content/codebase.css",
+      "wwwroot/Content/main.css",
+      "wwwroot/Content/jquery-ui.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/plugins_css.css",
+    "inputFiles": [
+      "wwwroot/Content/Plugins/Datepicker3.css",
+      "wwwroot/Content/Plugins/Datetimepicker.css",
+      "wwwroot/Content/plugins/dataTables.bootstrap4.css",
+      "wwwroot/Content/Plugins/Dialog.css",
+      "wwwroot/Content/Plugins/ProgressBar.css",
+      "wwwroot/Content/Plugins/SlickGrid.css",
+      "wwwroot/Content/Plugins/Sweetalert2.css",
+      "wwwroot/Content/Plugins/Nestable.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/core_js.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Core/jquery.js",
+      "wwwroot/Scripts/Core/jquery-ui.js",
+      "wwwroot/Scripts/Core/bootstrap.bundle.js",
+      "wwwroot/Scripts/Core/jquery.slimscroll.js",
+      "wwwroot/Scripts/Core/jquery.scrollLock.js",
+      "wwwroot/Scripts/Core/jquery.appear.js",
+      "wwwroot/Scripts/Core/jquery.countTo.js",
+      "wwwroot/Scripts/Core/jquery.event.drag-2.3.0.js",
+      "wwwroot/Scripts/Core/js.cookie.js",
+      "wwwroot/Scripts/Core/jquery.browser.js",
+      "wwwroot/Scripts/Core/moment.js",
+      "wwwroot/Scripts/master.js",
+      "wwwroot/Scripts/ns.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/plugins_js.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Plugins/Datepicker/jquery.bootstrap.datetimepicker.js",
+      "wwwroot/Scripts/Plugins/Datepicker/jquery.bootstrap.datepicker.js",
+      "wwwroot/Scripts/Plugins/Datepicker/locales/*.js",
+      "wwwroot/Scripts/Plugins/Dropzone/dropzone.js",
+      "wwwroot/Scripts/Plugins/Knockout/knockout.js",
+      "wwwroot/Scripts/Plugins/Select2/select2.full.js",
+      "wwwroot/Scripts/Plugins/Select2/i18n/*.js",
+      "wwwroot/Scripts/Plugins/SlickGrid/firebugx.js",
+      "wwwroot/Scripts/Plugins/SlickGrid/slick.*",
+      "wwwroot/Scripts/Plugins/Sweetalert2/sweetalert2.js",
+      "wwwroot/Scripts/Plugins/Validation/jquery.validate.js",
+      "wwwroot/Scripts/Plugins/Validation/localization/*.js",
+      "wwwroot/Scripts/Plugins/Wizard/jquery.bootstrap.wizard.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/components_js.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Components/AjaxUtil/ajaxUtil.js",
+      "wwwroot/Scripts/Components/Calendar/calendar.js",
+      "wwwroot/Scripts/Components/Dialog/dialog.js",
+      "wwwroot/Scripts/Components/Grid/grid.js",
+      "wwwroot/Scripts/Components/Message/message.js",
+      "wwwroot/Scripts/Components/ProgressBar/progressBar.js",
+      "wwwroot/Scripts/Components/Storage/storage.js",
+      "wwwroot/Scripts/Components/Validator/validator.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/componentsExtern_js.js",
+    "inputFiles": [
+      "wwwroot/Scripts/Plugins/datatables/jquery.dataTables.min.js",
+      "wwwroot/Scripts/Plugins/datatables/dataTables.bootstrap4.min.js",
+      "wwwroot/Scripts/Plugins/nestable2/jquery.nestable.js",
+      "wwwroot/Scripts/Plugins/datatables/be_tables_datatables.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/Bundling/jquery_js.js",
+    "inputFiles": [
+      "wwwroot/Scripts/jquery-{version}.js"
+    ]
+  }
+]

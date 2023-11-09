@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.12" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Taller.MovieCinema.Domain\Taller.MovieCinema.Domain.csproj" />
+    <ProjectReference Include="..\Taller.MovieCinema.Infrastructure.Core\Taller.MovieCinema.Infrastructure.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Entrada\Commands\Delete\" />
+    <Folder Include="Features\Entrada\Commands\Update\" />
+    <Folder Include="Features\Entrada\Queries\" />
+    <Folder Include="Features\Genders\Comand\" />
+    <Folder Include="Features\Movies\Queries\FindByGender\" />
+    <Folder Include="Features\Movies\Queries\FindTickets\" />
+    <Folder Include="Features\Pomociones\Commands\Delete\" />
+    <Folder Include="Features\Pomociones\Commands\Update\" />
+    <Folder Include="Transport\" />
+  </ItemGroup>
+
+</Project>

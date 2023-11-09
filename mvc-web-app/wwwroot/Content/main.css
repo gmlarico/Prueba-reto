@@ -1,0 +1,92 @@
+﻿.w-formulario-popup {
+    /*width: 490px;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    padding: 15px;
+}
+
+    .w-formulario-popup .w-form .w-item {
+        /*width: 360px;*/
+        margin: 30px auto;
+    }
+
+        .w-formulario-popup .w-form .w-item td {
+            padding-bottom: 10px;
+        }
+
+        .w-formulario-popup .w-form .w-item .w-subtitle {
+            font-size: 14px;
+            color: #343434;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .w-formulario-popup .w-form .w-item .w-size-1 {
+            width: 175px;
+        }
+
+        .w-formulario-popup .w-form .w-item .w-input {
+            border: 1px solid #ccc;
+            height: 28px;
+            width: 180px;
+            padding-left: 10px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            border-radius: 7px;
+        }
+
+    .w-formulario-popup .w-form .ui-spinner {
+        border-top-left-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
+
+.ui-spinner .w-input {
+    background-color: white;
+    margin: 0px;
+}
+
+.w-formulario-popup .w-form .w-item .w-textarea {
+    width: 100%;
+    height: 75px;
+    margin-top: 15px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.w-formulario-popup .cnt-button {
+    text-align: center;
+}
+
+    .w-formulario-popup .cnt-button button {
+        margin-left: 10px;
+    }
+
+.w-formulario-popup .w-detalle-proceso-terminado {
+    margin-top: 25px;
+}
+
+    .w-formulario-popup .w-detalle-proceso-terminado table {
+        margin: auto;
+    }
+
+        .w-formulario-popup .w-detalle-proceso-terminado table td {
+            padding-bottom: 10px;
+        }
+
+    .w-formulario-popup .w-detalle-proceso-terminado .w-text {
+        width: 260px;
+        padding: 0px 20px;
+    }
+
+    .w-formulario-popup .w-detalle-proceso-terminado .cnt-button {
+        margin-top: 20px;
+    }
